@@ -84,7 +84,7 @@ const styles = {
         position: 'relative',
         textAlign: 'left',
         background: 'linear-gradient(145deg, #fff, #f7f7f7)',
-        padding: '25px',
+    
     },
     jobCardHover: { 
         transform: 'translateY(-10px)', 
