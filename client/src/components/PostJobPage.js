@@ -14,7 +14,7 @@ function PostJobPage() {
         if (!formData.name) return setMessage('Company name is required.');
 
         try {
-            const { data } = await axios.post('http://localhost:5000/jobs', formData);
+            const { data } = await axios.post('https://aseesementr-interchalaclone.onrender.com/jobs', formData);
             setMessage(data.message);
             setFormData({ name: '', title: '', description: '', requirements: '', stipend: '' });
         } catch (err) {
