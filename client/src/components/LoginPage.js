@@ -12,7 +12,7 @@ function LoginPage() {
     const handleLogin = async () => {
         try {
             const { data } = await axios.post(
-                `https://aseesement-internshala-clone-27aa.onrender.com/auth/${loginType}/login`, 
+                `http://localhost:5000/auth/${loginType}/login`, 
                 { email, password }
             );
             localStorage.setItem('token', data.token);

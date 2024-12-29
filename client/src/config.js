@@ -1,5 +1,5 @@
 const config = {
-    backendUrl: "https://aseesement-internshala-clone-27aa.onrender.com",
+    backendUrl: "http://localhost:5000",
   };
   
   export default config;

@@ -14,7 +14,7 @@ function PostJobPage() {
         if (!formData.name) return setMessage('Company name is required.');
 
         try {
-            const { data } = await axios.post('https://aseesement-internshala-clone-27aa.onrender.com/jobs', formData);
+            const { data } = await axios.post('http://localhost:5000/jobs', formData);
             setMessage(data.message);
             setFormData({ name: '', title: '', description: '', requirements: '', stipend: '' });
         } catch (err) {

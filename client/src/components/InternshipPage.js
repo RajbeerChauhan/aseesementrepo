@@ -7,7 +7,7 @@ function InternshipPage() {
     useEffect(() => {
         const fetchJobs = async () => {
             try {
-                const { data } = await axios.get('https://aseesement-internshala-clone-27aa.onrender.com/jobs');
+                const { data } = await axios.get('http://localhost:5000/jobs');
                 setJobs(data);
             } catch (err) {
                 console.error('Error fetching jobs:', err.message);
