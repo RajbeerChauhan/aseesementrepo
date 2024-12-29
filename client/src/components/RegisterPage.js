@@ -21,8 +21,8 @@ function RegisterPage() {
         }
         try {
             const endpoint = registerType === 'student'
-                ? 'https://aseesementr-interchalaclone.onrender.com/auth/student/register'
-                : 'https://aseesementr-interchalaclone.onrender.com/auth/company/register';
+                ? 'https://aseesement-internshala-clone-27aa.onrender.com/auth/student/register'
+                : 'https://aseesement-internshala-clone-27aa.onrender.com/auth/company/register';
 
             const response = await axios.post(endpoint, {
                 name: formData.name,
