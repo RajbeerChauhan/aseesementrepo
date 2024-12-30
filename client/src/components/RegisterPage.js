@@ -21,8 +21,8 @@ function RegisterPage() {
         }
         try {
             const endpoint = registerType === 'student'
-                ? 'http://localhost:5000/auth/student/register'
-                : 'http://localhost:5000/auth/company/register';
+                ? 'https://aseesement.onrender.com/auth/student/register'
+                : 'https://aseesement.onrender.com/auth/company/register';
 
             const response = await axios.post(endpoint, {
                 name: formData.name,
